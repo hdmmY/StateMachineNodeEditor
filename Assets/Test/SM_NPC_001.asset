@@ -12,17 +12,20 @@ MonoBehaviour:
   m_Name: SM_NPC_001
   m_EditorClassIdentifier: 
   editorStates:
-  - {fileID: 114639872947252872}
+  - {fileID: 114047233182946508}
   saveName: Assets\Test\SM_NPC_001
   savePath: Assets\Test\SM_NPC_001.asset
   livesInScene: 0
   nodes:
-  - {fileID: 114790877325478672}
-  - {fileID: 114384032625653818}
-  - {fileID: 114680095842690136}
-  - {fileID: 114282432319505364}
+  - {fileID: 114799050682268044}
+  - {fileID: 114710525017508626}
+  - {fileID: 114009739987795852}
+  - {fileID: 114394077127382170}
+  - {fileID: 114098014750352826}
+  - {fileID: 114362786169398184}
+  - {fileID: 114435761085369792}
   groups: []
---- !u!114 &114282432319505364
+--- !u!114 &114009739987795852
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -30,55 +33,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb39bf664b3db654699fdb79a0ad8b87, type: 3}
-  m_Name: Condition
-  m_EditorClassIdentifier: 
-  position: {x: 277.5, y: 49.799995}
+  m_Script: {fileID: 11500000, guid: 8f995812c56849e4f9bcef62056035e5, type: 3}
+  m_Name: StateInfo
+  m_EditorClassIdentifier: Assembly-CSharp-firstpass::StateInfoNode
+  position: {x: -358.6, y: -129.70001}
   dynamicConnectionPorts: []
   backgroundColor: {r: 1, g: 1, b: 1, a: 1}
-  ConditionTransOut: {fileID: 114554786778234646}
-  ConditionTransIn: {fileID: 114782299553097132}
-  ConditionDescription: "\u6761\u4EF6\u63CF\u8FF0 "
-  Conditions: {fileID: 0}
---- !u!114 &114384032625653818
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f3650cc16a6d3046a691dc1bf670867, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  position: {x: -17.800003, y: 41}
-  dynamicConnectionPorts:
-  - {fileID: 114647099931695112}
-  backgroundColor: {r: 1, g: 1, b: 1, a: 1}
-  StateName: Move
-  StateDescription: "BOSS \u8BF4\u5783\u573E\u8BDD"
-  IsDefaultState: 0
---- !u!114 &114554786778234646
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f3d338988a4691f43b8c0764bd85cf70, type: 3}
-  m_Name: Out
-  m_EditorClassIdentifier: 
-  body: {fileID: 114282432319505364}
-  direction: 2
-  maxConnectionCount: 0
-  styleID: ConditionTransOut
-  _connections:
-  - {fileID: 114779450450261220}
-  side: 2
-  sidePosition: 29.35785
-  sideOffset: 0
---- !u!114 &114639872947252872
+  StateInfo: {fileID: 114662341781921422, guid: 877953918490ddb48b5458bed5b1e7a8,
+    type: 2}
+  StateScript: {fileID: 114648333748679918, guid: 877953918490ddb48b5458bed5b1e7a8,
+    type: 2}
+--- !u!114 &114047233182946508
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -92,9 +57,9 @@ MonoBehaviour:
   canvas: {fileID: 0}
   parentEditor: {fileID: 0}
   selectedNode: {fileID: 0}
-  panOffset: {x: -233.00002, y: -33.800003}
-  zoom: 1.6
---- !u!114 &114647099931695112
+  panOffset: {x: -217.59999, y: 172.8}
+  zoom: 1
+--- !u!114 &114071084897032922
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -105,16 +70,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3d338988a4691f43b8c0764bd85cf70, type: 3}
   m_Name: Out
   m_EditorClassIdentifier: 
-  body: {fileID: 114384032625653818}
+  body: {fileID: 114394077127382170}
   direction: 2
   maxConnectionCount: 0
   styleID: StateTransOut
   _connections:
-  - {fileID: 114782299553097132}
-  side: 2
-  sidePosition: 40.76641
+  - {fileID: 114822456192738880}
+  side: 4
+  sidePosition: 53.705883
   sideOffset: 0
---- !u!114 &114680095842690136
+--- !u!114 &114098014750352826
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -125,14 +90,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f3650cc16a6d3046a691dc1bf670867, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  position: {x: 291.6, y: -151}
+  position: {x: 368.8, y: -136.79999}
   dynamicConnectionPorts:
-  - {fileID: 114779450450261220}
+  - {fileID: 114323762878082018}
+  - {fileID: 114700298099945848}
+  - {fileID: 114662710301485004}
   backgroundColor: {r: 0.5137255, g: 0.91764706, b: 0.9529412, a: 1}
   StateName: Attack
-  StateDescription: "BOSS \u653B\u51FB"
+  StateDescription: BOSS Stage1 Attack
   IsDefaultState: 1
---- !u!114 &114779450450261220
+--- !u!114 &114323762878082018
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -143,16 +110,113 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3d338988a4691f43b8c0764bd85cf70, type: 3}
   m_Name: In
   m_EditorClassIdentifier: 
-  body: {fileID: 114680095842690136}
+  body: {fileID: 114098014750352826}
   direction: 1
   maxConnectionCount: 0
   styleID: StateTransIn
   _connections:
-  - {fileID: 114554786778234646}
+  - {fileID: 114790939436936724}
   side: 1
-  sidePosition: 55.19159
+  sidePosition: 1.230896
   sideOffset: 0
---- !u!114 &114782299553097132
+--- !u!114 &114362786169398184
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f3650cc16a6d3046a691dc1bf670867, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 74.00003, y: -303.6}
+  dynamicConnectionPorts:
+  - {fileID: 114762690745290836}
+  - {fileID: 114434910590301724}
+  backgroundColor: {r: 1, g: 1, b: 1, a: 1}
+  StateName: Speek
+  StateDescription: "Boss Wait for a while \nand speek."
+  IsDefaultState: 0
+--- !u!114 &114394077127382170
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f3650cc16a6d3046a691dc1bf670867, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 620, y: -40}
+  dynamicConnectionPorts:
+  - {fileID: 114071084897032922}
+  backgroundColor: {r: 1, g: 1, b: 1, a: 1}
+  StateName: Move
+  StateDescription: 'BOSS Stage1 Enter mo-
+
+    -ve'
+  IsDefaultState: 0
+--- !u!114 &114434910590301724
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3d338988a4691f43b8c0764bd85cf70, type: 3}
+  m_Name: Out
+  m_EditorClassIdentifier: 
+  body: {fileID: 114362786169398184}
+  direction: 2
+  maxConnectionCount: 0
+  styleID: StateTransOut
+  _connections:
+  - {fileID: 114801320867901754}
+  side: 2
+  sidePosition: 54.740265
+  sideOffset: 0
+--- !u!114 &114435761085369792
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb39bf664b3db654699fdb79a0ad8b87, type: 3}
+  m_Name: Condition
+  m_EditorClassIdentifier: 
+  position: {x: 330, y: -250}
+  dynamicConnectionPorts: []
+  backgroundColor: {r: 1, g: 1, b: 1, a: 1}
+  ConditionTransOut: {fileID: 114760034976738896}
+  ConditionTransIn: {fileID: 114801320867901754}
+  ConditionDescription: Condition2
+  Conditions: {fileID: 0}
+--- !u!114 &114507803990880406
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3d338988a4691f43b8c0764bd85cf70, type: 3}
+  m_Name: Out
+  m_EditorClassIdentifier: 
+  body: {fileID: 114710525017508626}
+  direction: 2
+  maxConnectionCount: 0
+  styleID: ConditionTransOut
+  _connections:
+  - {fileID: 114762690745290836}
+  side: 2
+  sidePosition: 27.568268
+  sideOffset: 0
+--- !u!114 &114662710301485004
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -163,16 +227,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3d338988a4691f43b8c0764bd85cf70, type: 3}
   m_Name: In
   m_EditorClassIdentifier: 
-  body: {fileID: 114282432319505364}
+  body: {fileID: 114098014750352826}
   direction: 1
   maxConnectionCount: 0
-  styleID: ConditionTransIn
+  styleID: StateTransIn
   _connections:
-  - {fileID: 114647099931695112}
-  side: 4
-  sidePosition: 14.077866
+  - {fileID: 114760034976738896}
+  side: 3
+  sidePosition: 54.04074
   sideOffset: 0
---- !u!114 &114790877325478672
+--- !u!114 &114700298099945848
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -180,13 +244,171 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f995812c56849e4f9bcef62056035e5, type: 3}
-  m_Name: StateInfo
-  m_EditorClassIdentifier: Assembly-CSharp-firstpass::StateInfoNode
-  position: {x: -279, y: -119.5}
+  m_Script: {fileID: 11500000, guid: f3d338988a4691f43b8c0764bd85cf70, type: 3}
+  m_Name: Out
+  m_EditorClassIdentifier: 
+  body: {fileID: 114098014750352826}
+  direction: 2
+  maxConnectionCount: 0
+  styleID: StateTransOut
+  _connections:
+  - {fileID: 114849690300030452}
+  side: 4
+  sidePosition: 24.324608
+  sideOffset: 0
+--- !u!114 &114710525017508626
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb39bf664b3db654699fdb79a0ad8b87, type: 3}
+  m_Name: Condition
+  m_EditorClassIdentifier: 
+  position: {x: 171.90001, y: -178.9}
   dynamicConnectionPorts: []
   backgroundColor: {r: 1, g: 1, b: 1, a: 1}
-  StateInfo: {fileID: 114662341781921422, guid: 877953918490ddb48b5458bed5b1e7a8,
-    type: 2}
-  StateScript: {fileID: 114648333748679918, guid: 877953918490ddb48b5458bed5b1e7a8,
-    type: 2}
+  ConditionTransOut: {fileID: 114507803990880406}
+  ConditionTransIn: {fileID: 114849690300030452}
+  ConditionDescription: Nothing
+  Conditions: {fileID: 0}
+--- !u!114 &114760034976738896
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3d338988a4691f43b8c0764bd85cf70, type: 3}
+  m_Name: Out
+  m_EditorClassIdentifier: 
+  body: {fileID: 114435761085369792}
+  direction: 2
+  maxConnectionCount: 0
+  styleID: ConditionTransOut
+  _connections:
+  - {fileID: 114662710301485004}
+  side: 2
+  sidePosition: 54.611023
+  sideOffset: 0
+--- !u!114 &114762690745290836
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3d338988a4691f43b8c0764bd85cf70, type: 3}
+  m_Name: In
+  m_EditorClassIdentifier: 
+  body: {fileID: 114362786169398184}
+  direction: 1
+  maxConnectionCount: 0
+  styleID: StateTransIn
+  _connections:
+  - {fileID: 114507803990880406}
+  side: 1
+  sidePosition: 108.78061
+  sideOffset: 0
+--- !u!114 &114790939436936724
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3d338988a4691f43b8c0764bd85cf70, type: 3}
+  m_Name: Out
+  m_EditorClassIdentifier: 
+  body: {fileID: 114799050682268044}
+  direction: 2
+  maxConnectionCount: 0
+  styleID: ConditionTransOut
+  _connections:
+  - {fileID: 114323762878082018}
+  side: 2
+  sidePosition: 106.22919
+  sideOffset: 0
+--- !u!114 &114799050682268044
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb39bf664b3db654699fdb79a0ad8b87, type: 3}
+  m_Name: Condition
+  m_EditorClassIdentifier: 
+  position: {x: 180, y: 20}
+  dynamicConnectionPorts: []
+  backgroundColor: {r: 1, g: 1, b: 1, a: 1}
+  ConditionTransOut: {fileID: 114790939436936724}
+  ConditionTransIn: {fileID: 114822456192738880}
+  ConditionDescription: Life less than 100
+  Conditions: {fileID: 0}
+--- !u!114 &114801320867901754
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3d338988a4691f43b8c0764bd85cf70, type: 3}
+  m_Name: In
+  m_EditorClassIdentifier: 
+  body: {fileID: 114435761085369792}
+  direction: 1
+  maxConnectionCount: 0
+  styleID: ConditionTransIn
+  _connections:
+  - {fileID: 114434910590301724}
+  side: 4
+  sidePosition: 7.8398285
+  sideOffset: 0
+--- !u!114 &114822456192738880
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3d338988a4691f43b8c0764bd85cf70, type: 3}
+  m_Name: In
+  m_EditorClassIdentifier: 
+  body: {fileID: 114799050682268044}
+  direction: 1
+  maxConnectionCount: 0
+  styleID: ConditionTransIn
+  _connections:
+  - {fileID: 114071084897032922}
+  side: 4
+  sidePosition: 6.5529404
+  sideOffset: 0
+--- !u!114 &114849690300030452
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3d338988a4691f43b8c0764bd85cf70, type: 3}
+  m_Name: In
+  m_EditorClassIdentifier: 
+  body: {fileID: 114710525017508626}
+  direction: 1
+  maxConnectionCount: 0
+  styleID: ConditionTransIn
+  _connections:
+  - {fileID: 114700298099945848}
+  side: 4
+  sidePosition: 67.13193
+  sideOffset: 0
