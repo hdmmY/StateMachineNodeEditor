@@ -1,0 +1,192 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 393beab0634dfbf428863151156224ec, type: 3}
+  m_Name: SM_NPC_001
+  m_EditorClassIdentifier: 
+  editorStates:
+  - {fileID: 114639872947252872}
+  saveName: Assets\Test\SM_NPC_001
+  savePath: Assets\Test\SM_NPC_001.asset
+  livesInScene: 0
+  nodes:
+  - {fileID: 114790877325478672}
+  - {fileID: 114384032625653818}
+  - {fileID: 114680095842690136}
+  - {fileID: 114282432319505364}
+  groups: []
+--- !u!114 &114282432319505364
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb39bf664b3db654699fdb79a0ad8b87, type: 3}
+  m_Name: Condition
+  m_EditorClassIdentifier: 
+  position: {x: 277.5, y: 49.799995}
+  dynamicConnectionPorts: []
+  backgroundColor: {r: 1, g: 1, b: 1, a: 1}
+  ConditionTransOut: {fileID: 114554786778234646}
+  ConditionTransIn: {fileID: 114782299553097132}
+  ConditionDescription: "\u6761\u4EF6\u63CF\u8FF0 "
+  Conditions: {fileID: 0}
+--- !u!114 &114384032625653818
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f3650cc16a6d3046a691dc1bf670867, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: -17.800003, y: 41}
+  dynamicConnectionPorts:
+  - {fileID: 114647099931695112}
+  backgroundColor: {r: 1, g: 1, b: 1, a: 1}
+  StateName: Move
+  StateDescription: "BOSS \u8BF4\u5783\u573E\u8BDD"
+  IsDefaultState: 0
+--- !u!114 &114554786778234646
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3d338988a4691f43b8c0764bd85cf70, type: 3}
+  m_Name: Out
+  m_EditorClassIdentifier: 
+  body: {fileID: 114282432319505364}
+  direction: 2
+  maxConnectionCount: 0
+  styleID: ConditionTransOut
+  _connections:
+  - {fileID: 114779450450261220}
+  side: 2
+  sidePosition: 29.35785
+  sideOffset: 0
+--- !u!114 &114639872947252872
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6ab6487237ff124ea4c2aa5de9ce3fb, type: 3}
+  m_Name: MainEditorState
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 0}
+  parentEditor: {fileID: 0}
+  selectedNode: {fileID: 0}
+  panOffset: {x: -233.00002, y: -33.800003}
+  zoom: 1.6
+--- !u!114 &114647099931695112
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3d338988a4691f43b8c0764bd85cf70, type: 3}
+  m_Name: Out
+  m_EditorClassIdentifier: 
+  body: {fileID: 114384032625653818}
+  direction: 2
+  maxConnectionCount: 0
+  styleID: StateTransOut
+  _connections:
+  - {fileID: 114782299553097132}
+  side: 2
+  sidePosition: 40.76641
+  sideOffset: 0
+--- !u!114 &114680095842690136
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f3650cc16a6d3046a691dc1bf670867, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 291.6, y: -151}
+  dynamicConnectionPorts:
+  - {fileID: 114779450450261220}
+  backgroundColor: {r: 0.5137255, g: 0.91764706, b: 0.9529412, a: 1}
+  StateName: Attack
+  StateDescription: "BOSS \u653B\u51FB"
+  IsDefaultState: 1
+--- !u!114 &114779450450261220
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3d338988a4691f43b8c0764bd85cf70, type: 3}
+  m_Name: In
+  m_EditorClassIdentifier: 
+  body: {fileID: 114680095842690136}
+  direction: 1
+  maxConnectionCount: 0
+  styleID: StateTransIn
+  _connections:
+  - {fileID: 114554786778234646}
+  side: 1
+  sidePosition: 55.19159
+  sideOffset: 0
+--- !u!114 &114782299553097132
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3d338988a4691f43b8c0764bd85cf70, type: 3}
+  m_Name: In
+  m_EditorClassIdentifier: 
+  body: {fileID: 114282432319505364}
+  direction: 1
+  maxConnectionCount: 0
+  styleID: ConditionTransIn
+  _connections:
+  - {fileID: 114647099931695112}
+  side: 4
+  sidePosition: 14.077866
+  sideOffset: 0
+--- !u!114 &114790877325478672
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f995812c56849e4f9bcef62056035e5, type: 3}
+  m_Name: StateInfo
+  m_EditorClassIdentifier: Assembly-CSharp-firstpass::StateInfoNode
+  position: {x: -279, y: -119.5}
+  dynamicConnectionPorts: []
+  backgroundColor: {r: 1, g: 1, b: 1, a: 1}
+  StateInfo: {fileID: 114662341781921422, guid: 877953918490ddb48b5458bed5b1e7a8,
+    type: 2}
+  StateScript: {fileID: 114648333748679918, guid: 877953918490ddb48b5458bed5b1e7a8,
+    type: 2}
